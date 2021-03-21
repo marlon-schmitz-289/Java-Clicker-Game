@@ -10,7 +10,7 @@ import javax.swing.JPanel;
 
 @SuppressWarnings({"unused", "serial"})
 public class ClickerPanel extends JPanel {
-	private String cName = "Judengold"; 	// Name der Währung kommt noch
+	private String cName = "Judengold";
 	private int currency;
 	private ClickObject co;
 	private Image img;

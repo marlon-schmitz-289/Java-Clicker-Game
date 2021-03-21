@@ -62,6 +62,7 @@ public class MainWindow extends JFrame {
 		tgbtn_Upgrades.setBounds(290, 220, 134, 30);
 		_contentPane.add(tgbtn_Upgrades);
 		
+		
 		JLabel lbl_currency = new JLabel("0.0 " + clicker.getCName());
 		lbl_currency.setBounds(66, 18, 152, 14);
 		_contentPane.add(lbl_currency);
@@ -77,10 +78,7 @@ public class MainWindow extends JFrame {
 					tgbtn_Upgrades.setText("Statistik");
 					upgrades.setVisible(false);
 					statistik.setVisible(true);
-				}
-				
-				
-				else {
+				} else {
 					tgbtn_Upgrades.setText("Upgrades");
 					statistik.setVisible(false);
 					upgrades.setVisible(true);
