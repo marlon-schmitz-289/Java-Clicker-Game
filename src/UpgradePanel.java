@@ -6,7 +6,7 @@ import javax.swing.JPanel;
 
 @SuppressWarnings({"serial", "unused"})
 public class UpgradePanel extends JPanel {
-	private JList<Upgrade> lst_Upgrades;
+	private Upgrade[] lst_Upgrades;
 	private ClickerPanel cp;
 	
 	
@@ -14,7 +14,7 @@ public class UpgradePanel extends JPanel {
 	public UpgradePanel(ClickerPanel cp) {
 		this.setBackground(Color.white);
 		
-		lst_Upgrades = new JList<Upgrade>();
+		lst_Upgrades = new Upgrade[7];		// erstmal nur 7 Ideen
 		this.cp = cp;
 	}
 	
