@@ -1,7 +1,6 @@
 
-@SuppressWarnings("unused")
 public class ClickObject {
-	private float value;
+	private float value = 1;
 	
 	
 	

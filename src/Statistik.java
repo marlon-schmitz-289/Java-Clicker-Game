@@ -1,5 +1,4 @@
 
-@SuppressWarnings({"unused"})
 public class Statistik {
 	private float gesCurrency;
 	private int gesClicks;

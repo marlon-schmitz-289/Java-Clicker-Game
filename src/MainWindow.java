@@ -5,6 +5,9 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.JToggleButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.JLabel;
 
 @SuppressWarnings({"serial"})
 public class MainWindow extends JFrame {
@@ -40,11 +43,11 @@ public class MainWindow extends JFrame {
 		
 		
 		ClickerPanel clicker = new ClickerPanel();
-		clicker.setBounds(10, 11, 270, 239);
+		clicker.setBounds(66, 43, 152, 146);
 		_contentPane.add(clicker);
 		
 		
-		UpgradePanel upgrades = new UpgradePanel();
+		UpgradePanel upgrades = new UpgradePanel(clicker);
 		upgrades.setBounds(290, 11, 134, 198);
 		_contentPane.add(upgrades);
 		
@@ -58,6 +61,13 @@ public class MainWindow extends JFrame {
 		JToggleButton tgbtn_Upgrades = new JToggleButton("Upgrades");
 		tgbtn_Upgrades.setBounds(290, 220, 134, 30);
 		_contentPane.add(tgbtn_Upgrades);
+		
+		JLabel lbl_currency = new JLabel("0.0 " + clicker.getCName());
+		lbl_currency.setBounds(66, 18, 152, 14);
+		_contentPane.add(lbl_currency);
+		
+		
+		
 		
 		
 		// Listener
@@ -75,6 +85,16 @@ public class MainWindow extends JFrame {
 					statistik.setVisible(false);
 					upgrades.setVisible(true);
 				}
+			}
+		});
+		
+		
+		
+		clicker.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				clicker.addCurrency();
+				lbl_currency.setText(clicker.getCurrency() + " " + clicker.getCName());
 			}
 		});
 	}
