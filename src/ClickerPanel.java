@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 @SuppressWarnings({"unused", "serial"})
 public class ClickerPanel extends JPanel {
 	private String cName = "Judengold";
-	private int currency;
+	private double currency;
 	private ClickObject co;
 	private Image img;
 	
@@ -35,22 +35,13 @@ public class ClickerPanel extends JPanel {
 	
 	
 	
-	public void paintComponent(Graphics g) {
-		super.paintComponent(g);
-		
-		g.drawRect(1, 1, this.getWidth() - 2, this.getHeight() - 2);
-		g.drawImage(img, 1, 1, this.getWidth() - 2, this.getHeight() - 2, null);
-	}
-	
-	
-	
 	public void addCurrency() {
 		this.currency += co.getValue();
 	}
 	
 	
 	
-	public int getCurrency() {
+	public double getCurrency() {
 		return this.currency;
 	}
 	
@@ -62,7 +53,16 @@ public class ClickerPanel extends JPanel {
 	
 	
 	
-	public int getCValue() {
+	public double getCValue() {
 		return this.co.getValue();
+	}
+	
+	
+	
+	public void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		
+		g.drawRect(1, 1, this.getWidth() - 2, this.getHeight() - 2);
+		g.drawImage(img, 1, 1, this.getWidth() - 2, this.getHeight() - 2, null);
 	}
 }

@@ -1,11 +1,11 @@
 
 public class Statistik {
-	private float gesCurrency;
+	private double gesCurrency;
 	private int gesClicks;
 	
 	
 	
-	public float getGesCu() {
+	public double getGesCu() {
 		return gesCurrency;
 	}
 	
@@ -17,7 +17,7 @@ public class Statistik {
 	
 	
 	
-	public void addGesCu(float currency) {
+	public void addGesCu(double currency) {
 		this.gesCurrency += currency;
 	}
 	

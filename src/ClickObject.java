@@ -1,16 +1,16 @@
 
 public class ClickObject {
-	private int value = 1;
+	private double value = 1;
 	
 	
 	
-	public int getValue() {
+	public double getValue() {
 		return this.value;
 	}
 	
 	
 	
-	public void addValue(int value) {
+	public void addValue(double value) {
 		this.value += value;
 	}
 }

@@ -2,13 +2,13 @@
 @SuppressWarnings("unused")
 public class Upgrade {
 	private String name;
-	private float cost;
+	private double cost;
 	private int level = 1;
 	private int maxLevel = 50;
 	
 	
 	
-	public Upgrade(String name, float cost) {
+	public Upgrade(String name, double cost) {
 		this.name = name;
 		this.cost = cost;
 	}

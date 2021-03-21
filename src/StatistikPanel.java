@@ -33,7 +33,7 @@ public class StatistikPanel extends JPanel {
 	
 	
 	
-	public void addStats(int clicks, float currency) {
+	public void addStats(int clicks, double currency) {
 		st.addGesCu(currency);
 		st.addGesCl(clicks);
 		
