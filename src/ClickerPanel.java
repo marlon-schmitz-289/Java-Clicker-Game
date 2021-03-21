@@ -2,7 +2,11 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
+import java.io.File;
+import java.io.IOException;
 
+import javax.imageio.ImageIO;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 @SuppressWarnings({"unused", "serial"})
@@ -10,7 +14,7 @@ public class ClickerPanel extends JPanel {
 	private String cName = "Testos"; 	// Name der Währung kommt noch
 	private float currency;
 	private ClickObject co;
-	//private Image img = new Image();
+	private Image img;
 	
 	
 	
@@ -19,6 +23,17 @@ public class ClickerPanel extends JPanel {
 		this.setForeground(new Color(0, 0, 0));
 		
 		this.co = new ClickObject();
+		
+		try {
+			File f = new File("src/currency.png");
+			this.img = ImageIO.read(f);
+		}
+		catch (IOException e) {
+			JOptionPane.showMessageDialog(null, e.getMessage());
+		}
+		catch (Exception e) {
+			JOptionPane.showMessageDialog(null, e.getMessage());
+		}
 	}
 	
 	
@@ -46,5 +61,11 @@ public class ClickerPanel extends JPanel {
 	
 	public String getCName() {
 		return this.cName;
+	}
+	
+	
+	
+	public float getCValue() {
+		return this.co.getValue();
 	}
 }

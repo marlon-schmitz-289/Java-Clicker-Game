@@ -95,6 +95,7 @@ public class MainWindow extends JFrame {
 			public void mouseClicked(MouseEvent e) {
 				clicker.addCurrency();
 				lbl_currency.setText(clicker.getCurrency() + " " + clicker.getCName());
+				statistik.addStats(1, clicker.getCValue());
 			}
 		});
 	}

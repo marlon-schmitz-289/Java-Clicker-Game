@@ -17,13 +17,13 @@ public class Statistik {
 	
 	
 	
-	public void calcGesCu(float currency) {
+	public void addGesCu(float currency) {
 		this.gesCurrency += currency;
 	}
 	
 	
 	
-	public void calcGesCl(int clicks) {
+	public void addGesCl(int clicks) {
 		this.gesClicks += clicks;
 	}
 }
