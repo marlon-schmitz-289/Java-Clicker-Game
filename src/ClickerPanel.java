@@ -4,15 +4,14 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.io.File;
 import java.io.IOException;
-
 import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
 @SuppressWarnings({"unused", "serial"})
 public class ClickerPanel extends JPanel {
-	private String cName = "Judengold"; 	// Name der Währung kommt noch
-	private float currency;
+	private String cName = "Judengold"; 	// Name der WÃ¤hrung kommt noch
+	private int currency;
 	private ClickObject co;
 	private Image img;
 	
@@ -27,11 +26,9 @@ public class ClickerPanel extends JPanel {
 		try {
 			File f = new File("./img/currency.png");
 			this.img = ImageIO.read(f);
-		}
-		catch (IOException e) {
+		} catch (IOException e) {
 			JOptionPane.showMessageDialog(null, e.getMessage());
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, e.getMessage());
 		}
 	}
@@ -53,7 +50,7 @@ public class ClickerPanel extends JPanel {
 	
 	
 	
-	public float getCurrency() {
+	public int getCurrency() {
 		return this.currency;
 	}
 	
@@ -65,7 +62,7 @@ public class ClickerPanel extends JPanel {
 	
 	
 	
-	public float getCValue() {
+	public int getCValue() {
 		return this.co.getValue();
 	}
 }

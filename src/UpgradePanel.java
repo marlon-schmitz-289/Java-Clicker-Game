@@ -30,6 +30,6 @@ public class UpgradePanel extends JPanel {
 	
 	private void readUpgradeList() {
 		// TODO
-		// json Datei lesen und Upgrades in Liste einfügen
+		// json Datei lesen und Upgrades in Liste einfÃ¼gen
 	}
 }
