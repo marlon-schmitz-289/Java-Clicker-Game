@@ -1,17 +1,52 @@
 {
     "upgrades":[
         {
-            "upgrade-name": "",
+            "upgrade-name": "Juden-Farmer",
             "upgrade-cost": "",
-            "upgrade-value": "",
-            "upgrade-level": "",
+            "upgrade-value": "0.1",
+            "upgrade-level": "0",
             "upgrade-max-level": ""
         },
         {
-            "upgrade-name": "",
+            "upgrade-name": "Schuh Polierer",
+            "upgrade-cost": "",
+            "upgrade-value": "0.2",
+            "upgrade-level": "0",
+            "upgrade-max-level": ""
+        },
+        {
+            "upgrade-name": "Oma Besucher",
+            "upgrade-cost": "",
+            "upgrade-value": "0.5",
+            "upgrade-level": "0",
+            "upgrade-max-level": ""
+        },
+        {
+            "upgrade-name": "Judengold Minen",
+            "upgrade-cost": "",
+            "upgrade-value": "1.0",
+            "upgrade-level": "0",
+            "upgrade-max-level": ""
+        },
+        {
+            "upgrade-name": "Nazischuhpolierer",
+            "upgrade-cost": "",
+            "upgrade-value": "1.3",
+            "upgrade-level": "0",
+            "upgrade-max-level": ""
+        },
+        {
+            "upgrade-name": "Bank Arbeiter",
             "upgrade-cost": "",
             "upgrade-value": "",
-            "upgrade-level": "",
+            "upgrade-level": "0",
+            "upgrade-max-level": ""
+        },
+        {
+            "upgrade-name": "Bank Arbeiter (greedy)",
+            "upgrade-cost": "",
+            "upgrade-value": "",
+            "upgrade-level": "0",
             "upgrade-max-level": ""
         }
     ]
