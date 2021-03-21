@@ -24,7 +24,7 @@ public class StatistikPanel extends JPanel {
 	public void paintComponent(Graphics g) {
 		super.paintComponent(g);
 		
-		g.drawString("Gesamte {Währung}:", 5, 15);
+		g.drawString("Gesamtes " + cp.getCName() + ":", 5, 15);
 		g.drawString(st.getGesCu() + "", 5, 30);
 		
 		g.drawString("Gesamte Clicks:", 5, 55);

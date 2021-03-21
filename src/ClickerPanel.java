@@ -11,7 +11,7 @@ import javax.swing.JPanel;
 
 @SuppressWarnings({"unused", "serial"})
 public class ClickerPanel extends JPanel {
-	private String cName = "Testos"; 	// Name der Währung kommt noch
+	private String cName = "Judengold"; 	// Name der Währung kommt noch
 	private float currency;
 	private ClickObject co;
 	private Image img;
@@ -25,7 +25,7 @@ public class ClickerPanel extends JPanel {
 		this.co = new ClickObject();
 		
 		try {
-			File f = new File("src/currency.png");
+			File f = new File("img/currency.png");
 			this.img = ImageIO.read(f);
 		}
 		catch (IOException e) {
