@@ -25,7 +25,7 @@ public class ClickerPanel extends JPanel {
 		this.co = new ClickObject();
 		
 		try {
-			File f = new File("img/currency.png");
+			File f = new File("./img/currency.png");
 			this.img = ImageIO.read(f);
 		}
 		catch (IOException e) {
@@ -42,7 +42,7 @@ public class ClickerPanel extends JPanel {
 		super.paintComponent(g);
 		
 		g.drawRect(1, 1, this.getWidth() - 2, this.getHeight() - 2);
-		g.drawImage(null /*Image*/, 1, 1, this.getWidth() - 2, this.getHeight() - 2, null);
+		g.drawImage(img, 1, 1, this.getWidth() - 2, this.getHeight() - 2, null);
 	}
 	
 	

@@ -1,6 +1,6 @@
 
 public class ClickObject {
-	private float value = 1;
+	private float value = (float) 0.1;
 	
 	
 	
