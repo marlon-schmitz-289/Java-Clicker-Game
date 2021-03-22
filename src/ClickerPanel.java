@@ -14,14 +14,15 @@ public class ClickerPanel extends JPanel {
 	private double currency;
 	private ClickObject co;
 	private Image img;
+	private Rank r;
 	
 	
 	
 	public ClickerPanel() {
 		this.setBackground(new Color(255, 255, 255));
 		this.setForeground(new Color(0, 0, 0));
-		
 		this.co = new ClickObject();
+		this.r = new Rank();		
 		
 		try {
 			File f = new File("./img/currency.png");
@@ -30,7 +31,7 @@ public class ClickerPanel extends JPanel {
 			JOptionPane.showMessageDialog(null, e.getMessage());
 		} catch (Exception e) {
 			JOptionPane.showMessageDialog(null, e.getMessage());
-		}
+		}		
 	}
 	
 	

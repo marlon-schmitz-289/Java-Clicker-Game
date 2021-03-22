@@ -19,7 +19,6 @@ public class Rank {
 			this.curr_rank += 1;			
 			changeRank();
 		}
-		
 	}
 	
 	
@@ -69,7 +68,7 @@ public class Rank {
 			}
 			
 			case 9: {
-				this.rank_name = Name.o;
+				this.rank_name = Name.meister_Jude;
 				this.multiplier = 187;
 				break;
 			}

@@ -8,6 +8,6 @@ public enum Name {
 	j,
 	k,
 	l,
-	o,
+	meister_Jude,
 	Gold_Digger
 }
