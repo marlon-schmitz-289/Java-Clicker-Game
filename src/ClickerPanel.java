@@ -37,7 +37,7 @@ public class ClickerPanel extends JPanel {
 	
 	
 	public void addCurrency() {
-		this.currency += co.getValue();
+		this.currency += co.getValue() * this.r.getMultiplier();
 	}
 	
 	
@@ -56,6 +56,12 @@ public class ClickerPanel extends JPanel {
 	
 	public double getCValue() {
 		return this.co.getValue();
+	}
+	
+	
+	
+	public Rank getRank() {
+		return this.r;
 	}
 	
 	

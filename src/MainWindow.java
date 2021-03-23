@@ -21,9 +21,7 @@ public class MainWindow extends JFrame {
 				try {
 					MainWindow frame = new MainWindow();
 					frame.setVisible(true);
-				}
-				
-				catch (Exception e) {
+				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
@@ -43,7 +41,7 @@ public class MainWindow extends JFrame {
 		
 		
 		ClickerPanel clicker = new ClickerPanel();
-		clicker.setBounds(66, 43, 152, 146);
+		clicker.setBounds(66, 60, 152, 146);
 		_contentPane.add(clicker);
 		
 		
@@ -63,8 +61,18 @@ public class MainWindow extends JFrame {
 		_contentPane.add(tgbtn_Upgrades);
 		
 		
+		JLabel lbl_rank = new JLabel("" + clicker.getRank().getName());
+		lbl_rank.setBounds(66, 15, 152, 14);
+		_contentPane.add(lbl_rank);
+		
+		
+		JLabel lbl_multiplier = new JLabel("Multiplier: " + clicker.getRank().getMultiplier());
+		lbl_multiplier.setBounds(66, 30, 152, 14);
+		_contentPane.add(lbl_multiplier);
+		
+		
 		JLabel lbl_currency = new JLabel("0.0 " + clicker.getCName());
-		lbl_currency.setBounds(66, 18, 152, 14);
+		lbl_currency.setBounds(66, 45, 152, 14);
 		_contentPane.add(lbl_currency);
 		
 		

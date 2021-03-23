@@ -1,5 +1,5 @@
 
-@SuppressWarnings("unused")
+@SuppressWarnings({"unused"})
 public class Rank {
 	private int multiplier = 1;
 	private int curr_rank = 1;
@@ -19,6 +19,18 @@ public class Rank {
 			this.curr_rank += 1;			
 			changeRank();
 		}
+	}
+	
+	
+	
+	public Name getName() {
+		return this.rank_name;
+	}
+	
+	
+	
+	public int getMultiplier() {
+		return this.multiplier;
 	}
 	
 	
