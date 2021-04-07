@@ -1,5 +1,4 @@
 
-@SuppressWarnings({"unused"})
 public class Rank {
 	private int multiplier = 1;
 	private int curr_rank = 1;

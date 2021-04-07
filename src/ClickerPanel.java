@@ -1,5 +1,4 @@
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.io.File;
@@ -8,7 +7,7 @@ import javax.imageio.ImageIO;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 
-@SuppressWarnings({"unused", "serial"})
+@SuppressWarnings({"serial"})
 public class ClickerPanel extends JPanel {
 	private String cName = "Judengold";
 	private double currency;
